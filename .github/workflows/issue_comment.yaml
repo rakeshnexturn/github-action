@@ -1,9 +1,13 @@
 name: Create a comment on new issue
 
 on:
-  iss
+  issues:
     types: [opened]
     
 jobs:
   comment-with-action:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: "dump github context"
+        run: echo '{{ toJSON(github.event) }}' | 
+        shell: bash
