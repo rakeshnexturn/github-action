@@ -1,0 +1,9 @@
+name: Create a comment on new issue
+
+on:
+  iss
+    types: [opened]
+    
+jobs:
+  comment-with-action:
+    runs-on: ubuntu
