@@ -17,3 +17,5 @@ jobs:
           This is a multi-line test comment
           - With Github **Markdown** :sparkles:
           - created by [create-or-update-comment][1]
+          [1]: https://github.com/peter-evans/create-or-update-comment
+        reactions: '+1'
